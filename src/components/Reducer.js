@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import Spread from './Spread';
 
 const reducer = (state, action) => {
   if (action.type === 'buy_ingredients') return { money: state.money - 10 };
@@ -26,6 +27,7 @@ function Reducer() {
           Serve Customer A Meal
         </button>
       </div>
+      <Spread />
     </div>
   );
 }
