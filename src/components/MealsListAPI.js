@@ -1,9 +1,10 @@
 import { useContext, useState } from 'react';
 import { MealsContext } from './MealsContext';
 
-// Consume the Context in MealsList Component
 function MealsList() {
   const [mealName, setMealName] = useState('');
+
+  // Consume the Context in MealsList Component
   const { meals, addMeal } = useContext(MealsContext);
 
   const handleAddMeal = (e) => {

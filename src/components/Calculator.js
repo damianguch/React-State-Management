@@ -102,7 +102,7 @@ function Calculator() {
         <button className="btn px-3 py-1 rounded mx-2" onClick={resetInput}>
           Reset Input
         </button>
-        <button className="btn px-3 py-1 rounded mx-2" onClick={resetResult}>
+        <button className="btn px-3 py-1 rounded mx-2 b" onClick={resetResult}>
           Reset Result
         </button>
       </form>

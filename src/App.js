@@ -14,6 +14,7 @@ import GoalApp from './components/GoalApp';
 import Employees from './components/Employees';
 import NavBar from './components/NavBar';
 import Reducer from './components/Reducer';
+import Composition from './components/Composition';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/reducer" element={<Reducer />} />
+          <Route path="/effect" element={<Composition />} />
           <Route
             path="/"
             element={

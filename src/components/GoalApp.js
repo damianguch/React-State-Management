@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+/**
+ * The GoalForm Component submitHandler function takes the "onAdd" fxn from
+ * the GoalApp componnent. It supplies the parameters to the onAdd fxn.
+ */
 function GoalForm(props) {
   const [formData, setFormData] = useState({ goal: '', by: '' });
 
@@ -18,16 +22,16 @@ function GoalForm(props) {
     <div className="container w-50">
       <h1 className="App">My Little Lemon Goals</h1>
       <form onSubmit={submitHandler} className="row">
-        <label className="form-label">Goal</label>
+        <label className="form-label fs-5 px-0">Goal</label>
         <input
-          className="h5 form-control"
+          className="form-control"
           type="text"
           name="goal"
           placeholder="Goal"
           value={formData.goal}
           onChange={changeHandler}
         />
-        <label className="form-label">Timeline: </label>
+        <label className="form-label fs-5 mt-3 px-0">Timeline: </label>
         <input
           className="h5 form-control"
           type="text"
@@ -44,6 +48,10 @@ function GoalForm(props) {
   );
 }
 
+/**
+ * The ListOfGoals components takes the goals list array(allGoals) from the
+ * GoalApp componet and display them.
+ */
 function ListOfGoals(props) {
   return (
     <div className="d-flex justify-content-center">
@@ -60,6 +68,10 @@ function ListOfGoals(props) {
   );
 }
 
+/**
+ * Supplies the allGoals array and onAdd fxn as props to ListOfGoals and
+ * GoalsForm components.
+ */
 export default function GoalApp() {
   const [allGoals, updateAllGoals] = useState([]);
 

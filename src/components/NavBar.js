@@ -26,9 +26,9 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white h5" href="/effect">
-                useEffect
-              </a>
+              <Link className="nav-link text-white h5" to="/effect">
+                composition
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white h5" href="/state">

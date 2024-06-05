@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 // Create and export the context
 export const MealsContext = createContext();
 
-// Create a provider component
+// Create a context provider component
 export const MealsProvider = ({ children }) => {
   const [meals, setMeals] = useState([]);
 
