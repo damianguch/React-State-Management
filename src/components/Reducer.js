@@ -1,5 +1,6 @@
 import { useReducer } from 'react';
-import Spread from './Spread';
+import SpreadOperator from './Spread';
+import HOC from './HOC';
 
 const reducer = (state, action) => {
   if (action.type === 'buy_ingredients') return { money: state.money - 10 };
@@ -27,7 +28,8 @@ function Reducer() {
           Serve Customer A Meal
         </button>
       </div>
-      <Spread />
+      <SpreadOperator />
+      <HOC />
     </div>
   );
 }

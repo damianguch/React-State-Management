@@ -24,13 +24,15 @@ export function OrderList() {
 const Button = ({ type, children, ...buttonProps }) => {
   const className = type === 'primary' ? 'PrimaryButton' : 'SecondaryButton';
   return (
-    <button className={`Button ${className}`} {...buttonProps}>
+    <button
+      className={`Button ${className} btn btn-info mx-2`}
+      {...buttonProps}>
       {children}
     </button>
   );
 };
 
-// the type prop is a custom prop that determines the background of the button
+// The type prop is a custom prop that determines the background of the button
 //based on the theme provided. ...buttonProps groups all the props that belong
 // to the native button
 
@@ -40,16 +42,17 @@ const Button = ({ type, children, ...buttonProps }) => {
  */
 
 /**
- * Thus, buttonProps is not explicitly defined but is implicitly created
+ * buttonProps is not explicitly defined but is implicitly created
  * through the use of destructuring and the rest operator, which collects
  * any additional properties passed to the component.
+ *
  * buttonProps is automatically created from the remaining props not explicitly
  * destructured.
  */
 const LoginButton = ({ type, children, ...buttonProps }) => {
   return (
     <Button
-      type="seconday"
+      type="secondary"
       {...buttonProps}
       onClick={() => alert('Logging in!')}>
       {children}
@@ -57,10 +60,10 @@ const LoginButton = ({ type, children, ...buttonProps }) => {
   );
 };
 
-function Spread() {
+function SpreadOperator() {
   return (
     <div className="App mt-5">
-      <header className="Header">Little Lemon Restaurant</header>
+      <header className="Header h3">Little Lemon Restaurant</header>
       <Button type="primary" onClick={() => alert('Signing up')}>
         Sign Up
       </Button>
@@ -71,4 +74,4 @@ function Spread() {
   );
 }
 
-export default Spread;
+export default SpreadOperator;

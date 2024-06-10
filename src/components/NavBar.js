@@ -31,8 +31,8 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white h5" href="/state">
-                useState
+              <a className="nav-link text-white h5" href="/hoc">
+                HOC
               </a>
             </li>
           </ul>

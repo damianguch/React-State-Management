@@ -8,6 +8,7 @@
 .App {
   text-align: center;
 }
+
 .App form > button {
   margin-right: 5px;
   border: none;

@@ -15,6 +15,8 @@ import Employees from './components/Employees';
 import NavBar from './components/NavBar';
 import Reducer from './components/Reducer';
 import Composition from './components/Composition';
+import { PostList, UserList } from './components/HOC2';
+import { EnhancedPostList, EnhancedUserList } from './components/HOC3';
 
 function App() {
   return (
@@ -24,6 +26,17 @@ function App() {
         <Routes>
           <Route path="/reducer" element={<Reducer />} />
           <Route path="/effect" element={<Composition />} />
+          <Route
+            path="/hoc"
+            element={
+              <div>
+                <UserList />
+                <PostList />
+                <EnhancedUserList />
+                <EnhancedPostList />
+              </div>
+            }
+          />
           <Route
             path="/"
             element={
