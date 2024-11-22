@@ -3,7 +3,8 @@ import axios from 'axios';
 
 /**
  * This will involve creating an HOC to handle the data fetching logic and
- * using it to enhance the components that need to fetch data.
+ * using it to enhance the components that need to fetch data. The components
+ * will no longer dp the fetching function.
  *
  * Encapsulating cross cutting concerns - data fetching, state management and
  * error checking

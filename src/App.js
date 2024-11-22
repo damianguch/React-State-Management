@@ -1,6 +1,6 @@
 /**
  * REACT STATE MANAGEMENT
- * 1. Using Redux(Redux Tool Kit)
+ * 1. Using Redux(RTK)
  */
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
